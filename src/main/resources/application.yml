@@ -1,2 +1,17 @@
 server:
   port: 9000
+spring:
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non-contextual-creation: true
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/craftbeer
+    username: craftbeer
+    password: 95589558

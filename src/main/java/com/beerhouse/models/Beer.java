@@ -9,7 +9,7 @@ import java.util.UUID;
 @Entity
 @Table(name = "BEERS")
 public class Beer implements Serializable {
-    private static final long serialVersionUID = 1L;
+    public static final long serialVersionUID = 1L;
 
     @Id
     @Column(nullable = false, unique = true)

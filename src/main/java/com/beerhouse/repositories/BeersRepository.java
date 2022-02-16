@@ -6,4 +6,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.UUID;
 
 public interface BeersRepository extends JpaRepository<Beer, Integer> {
+    boolean existsByName(String name);
 }

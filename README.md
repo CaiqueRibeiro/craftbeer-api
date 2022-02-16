@@ -94,6 +94,17 @@ Dica: Copie e cole o conteúdo do arquivo acima no [Swagger Editor](https://edit
 
 ## Seção reservada para que você descreva brevemente como executar o seu projeto
 
-Pode ser algo simples, como executar o arquivo Application.java. Ou talvez tenha alguma dependência como base de dados, por exemplo.
+Execução em ambiente Linux
+1. Dar permissão de escrita, leitura e execução ao diretório:
+```
+sudo chmod 777 .
+```
 
-TODO
+2. Rodar o docker-compose.yaml na raíz do projeto para gerar as imagens e rodar a API:
+```
+docker-compose up
+//OU
+docker-compose up -d
+```
+
+A API irá rodar na porta 9000 como padrão.

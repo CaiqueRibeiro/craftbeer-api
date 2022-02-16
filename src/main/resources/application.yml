@@ -12,6 +12,6 @@ spring:
       ddl-auto: update
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/craftbeer
+    url: jdbc:postgresql://db:5432/craftbeer
     username: craftbeer
     password: 95589558
